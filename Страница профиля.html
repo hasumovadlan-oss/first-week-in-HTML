@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Мой профиль</title>
+    </head>
+
+    <body>
+        <h1>Мой профиль</h1>
+        <img src="images.png" alt="Мой аватар">
+        
+        <form method="post" action="Условный сервер.php">
+            <div>
+                <input type="text" name="Имя"><br>
+                <input type="email" name="email"><br>
+                <p><input type="radio" name="gender" value="male">муж<br>
+                <input type="radio" name="gender" value="female">жен<br>
+                <p><button type="submit">Сохранить</button></p>
+            </div>
+        </form>
+
+        <form method="post" action="Условный сервер.com">
+            <div>
+                <p><h2>Какой браузер вы используете?</h2></p>
+                <input type="radio" name="browser" value="Chrome">Chrome<br>
+                <input type="radio" name="browser" value="Firefox">Firefox<br>
+                <input type="radio" name="browser" value="Edge">Edge<br>
+                
+                <p><h2>Что изучаете?</h2></p>
+                <input type="checkbox" value="HTML">HTML<br> 
+                <input type="checkbox" value="CSS">CSS<br>
+                <input type="checkbox" value="JavaScript">JavaScript<br>
+                <input type="checkbox" value="Python">Python<br>
+                <p><input type="submit" value="Отправить ответы"></p>
+
+                <iframe src="http://wikipedia.com"
+                 width="400" height="300">
+                </iframe>
+            </div>
+
+            <section>
+            <figure>
+                <img src="images.png" alt="фото чего то там"
+                width="200" height="250">
+                <figcaption><b>Первое фото из галереи</b></figcaption>
+            </figure>
+
+            <figure>
+                <img src="19_Whiskas_Color_Contrast_1_540px.jpg" alt="Котик"
+                width="200" height="230">
+                <figcaption><em>Котик милый очень милый :3</em></figcaption>
+            </figure>
+
+            <figure>
+                <img src="{FD2F0E03-FE5B-4AB4-A3CF-AFF5A3D1E8C2}.png" alt="фоточка"
+                width="200" height="250">
+                <figcaption><mark style="color: deeppink;">Фоточка милая</mark></figcaption>
+            </figure>
+            </section>
+
+            <form method="post" action="Любой сервер">
+
+                <h2>Выбор размера (радиокнопки)</h2>
+                <input type="radio" name="size" value="Маленькая">Маленькая<br>
+                <input type="radio" name="size" value="Средняя">Средняя<br>
+                <input type="radio" name="size" value="Большая">Большая<br>
+        
+                <h2>Выбор топпингов (чекбоксы)</h2>
+                <div>
+                    <input type="checkbox" name="food" value="Сыр">Сыр<br>
+                    <input type="checkbox" name="food" value="Грибы">Грибы<br>
+                    <input type="checkbox" name="food" value="Пепперони">Пепперони<br>
+                    <input type="checkbox" name="food" value="Оливки">Оливки<br>
+                    <p><button style="color: hotpink;" type="submit">Заказать</button></p>
+                </div>
+            </form>
+
+            <table border="5">
+                <thead>
+                    <caption><strong style="color: crimson;">Данные персональные</strong></caption>
+                    <tr>
+                        <th>Имя</th>
+                        <th>Возраст</th>
+                        <th>Город</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Амина</td>
+                        <td>22</td>
+                        <td>Краснодар</td>
+                    </tr>
+
+                    <tr>
+                        <td>Адлан</td>
+                        <td>23</td>
+                        <td>Грозный</td>
+                    </tr>
+
+                    <tr>
+                        <td>Шамиль</td>
+                        <td>24</td>
+                        <td>Атырау</td>
+                    </tr>
+                    
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Итоговая таблица</td>
+                        </tr>
+                        <!--Вот и все вроде.
+                        Если это все неправильно я буду разачарован в себе-->
+                    </tfoot>
+                </tbody>
+            </table>
+
+            <form method="post" action="Условно сервер">
+                <h2 style="color: darkorange;">Форма для регистрации</h2>
+                <input name="login"><br>
+                <input type="password" name="password"><br>
+                <input type="checkbox" name="remember me" value="Запомнить меня">Запомнить меня<br>
+                <p><input  type="submit" value="Отправить"></p>
+                <!--Надеюсь хоть немного верно-->
+            </form>
+            
+            <form method="post" action="Любой сервер">
+                <h2>Тестирование различных атрибутов внутри тега input</h2>
+                <input type="range" min="0" max="100" step="2" value="50">
+            </form>
+
+            <form method="post" action="server.php">
+
+                <h2>Условный заголовок</h2>
+                <input name="login"><br>
+                <input type="password" name="password"><br>
+                <p>
+                    <button style="color: deepskyblue;">Отправить</button>
+                </p>
+                <!--Простейшая форма для повторения тега form-->
+            </form>
+
+            <form>
+                <p><input type="text" name="login"></p>
+                <p><input type="password" name="password"></p>
+                <p>
+                    <button type="submit" formmethod="get" formaction="index.html">Отправить</button>
+                    <button type="reset">ОТмена</button>
+                </p>
+            </form>
+
+            <form>
+                <p>
+                    <input type="text" name="Search">
+                    <input type="image" src="html-5_5968267.png" width="25" height="20" name="submit">
+                </p>
+            </form>
+
+            <form>
+                <p>
+                    <input type="text" name="login"><br>
+                    <input type="password" name="password"><br>
+                    <input type="submit" formmethod="post" formaction="index.html" name="button" value="Отправить">
+                </p>
+            </form>
+    </body>
+</html>
